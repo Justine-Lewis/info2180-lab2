@@ -1,0 +1,155 @@
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    grid-template-rows: auto 1fr auto; 
+    grid-template-areas: 
+        "header header header header"
+        "main-content main-content main-content sidebar"
+        "main-content main-content main-content sidebar"
+        "footer footer footer footer";
+    height: 100vh; 
+}
+
+
+
+header{
+    display: flex;
+    grid-area:header;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    margin:0;
+    padding:0;
+    background-color: #63B3ED;
+}
+.img{
+    border-radius: 50%;
+    width: 100px;
+    margin: 20px;
+
+    height:100px;
+
+}
+
+.heading{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0;
+
+    
+    color:#FFFFFF;
+}
+
+
+.quote{
+    color:#FFFFFF;
+    align-items: flex-end;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px; /* Default font size */
+    color: #2D3748;
+}
+
+.main-content{
+    grid-area: main-content;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 20px;
+}
+
+article {
+    float:left;
+    width:100%;
+    grid-column: 10;
+    grid-row: span 1;
+    padding: 20px;
+    padding-left: 200px;
+    padding-right: 50px;
+    margin: 30px;
+    margin-right:100%;
+    border-bottom: 1 px solid #ddd;
+}
+
+.float-right{
+    float:right;
+    margin-left:0px;
+    width:auto;
+    padding: 0px;;
+    height: 150px;
+}
+
+.float-left{
+    float:left;
+    margin-right:15px;
+    max-width: auto;
+    height:150px;
+}
+.blog-post1{
+    font-size: 32px;
+    color:#48BB78;
+    margin-bottom: 0;
+}
+  
+#date1{
+    margin: 0;
+    color: #718096;
+
+}
+
+hr{
+    
+    width:50%;
+    margin: auto;
+    
+}
+
+
+
+.sidebar{
+    grid-area: sidebar;
+    max-width: 250px;
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin:0;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about{
+    background-color:#E2E8F0;
+    padding:10px
+}
+#abt{
+    text-align: justify;
+}
+.social-media{
+    color: #4299E1;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+}
+
+.archives{
+    color: #4299E1;
+}
+
+.footer{
+    grid-area:footer;
+    background-color:#2C5282 ;
+    color: #FFFFFF;
+}
+
+#copyright{
+    padding-left: 50px;
+    text-align: center;
+}
